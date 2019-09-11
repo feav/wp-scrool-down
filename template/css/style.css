@@ -3,7 +3,7 @@
 
     .bk-scroller{
       position: absolute;
-      bottom: 0px;
+      bottom: -200%;
       width: 100%;
       text-align: center;
       color: #000;
