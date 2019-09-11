@@ -1,0 +1,134 @@
+
+/* START ANIMATE SCROLL DOWN */
+
+    .bk-scroller{
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      text-align: center;
+      color: #000;
+      font-size: 10px;
+      letter-spacing: 2px;
+      height: 50px;
+    }
+    .scroller_set {
+        width: 18px;
+      height: 28px;
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute!important;
+      visibility: inherit;
+      opacity: 1;
+    }
+
+    .scroller_shape {
+        position: absolute!important;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid rgb(6, 75, 126);
+      border-radius: 50px!important;
+      -webkit-border-radius: 50px!important;
+      overflow: hidden;
+      text-align: center;
+    }
+    .scroller_shape>svg {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        left: 50%;
+        margin-left: -5px;
+    }
+    .scroller-c1,.scroller-c2 {
+        animation-duration: 1.5s;
+        animation-name: scrolldown;
+        animation-iteration-count: infinite;
+        fill: rgb(6, 75, 126);
+    }
+    .scroller-c2 {
+        animation-delay: .75s
+    }
+    .text-scroll{
+        position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .bk-scroller .text-scroll a:hover, .bk-scroller .text-scroll a:focus{
+        color: #000;
+    }
+    @-moz-keyframes scrolldown {
+        0% {
+            opacity: 0;
+            transform: translate(0,-8px)
+        }
+
+        50% {
+            opacity: 1;
+            transform: translate(0,0)
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(0,8px)
+        }
+    }
+
+    @-webkit-keyframes scrolldown {
+        0% {
+            opacity: 0;
+            transform: translate(0,-8px)
+        }
+
+        50% {
+            opacity: 1;
+            transform: translate(0,0)
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(0,8px)
+        }
+    }
+
+    @-o-keyframes scrolldown {
+        0% {
+            opacity: 0;
+            transform: translate(0,-8px)
+        }
+
+        50% {
+            opacity: 1;
+            transform: translate(0,0)
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(0,8px)
+        }
+    }
+
+    @keyframes scrolldown {
+        0% {
+            opacity: 0;
+            transform: translate(0,-8px)
+        }
+
+        50% {
+            opacity: 1;
+            transform: translate(0,0)
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(0,8px)
+        }
+    }
+
+
+
+/* END  ANIMATE SCROLL DOWN */
